@@ -1,3 +1,5 @@
 dist: trusty
 language: java
-sudo: required
+
+before_script:
+ - ./gradlew karma-start || true
