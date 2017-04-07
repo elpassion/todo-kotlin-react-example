@@ -3,5 +3,10 @@ language: java
 
 before_script:
  - npm install karma
- - npm install --save-dev karma-phantomjs-launcher
+ - npm install qunitjs
+ - npm install karma-qunit
+ - npm install karma-junit-reporter
+ - npm install karma-sourcemap-loader
+ - npm install karma-phantomjs-launcher
+ - npm install phantomjs-prebuilt
  - node ./node_modules/karma/bin/karma start --single-run --port 9876 --browsers PhantomJS
