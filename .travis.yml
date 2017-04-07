@@ -9,6 +9,7 @@ before_script:
  - npm install karma-sourcemap-loader
  - npm install karma-phantomjs-launcher
  - npm install phantomjs-prebuilt
+ - npm install webpack
  - npm install karma-webpack
  - ./gradlew karma-start || true
  - node ./node_modules/karma/bin/karma start --single-run --port 9876 --browsers PhantomJS build/karma.conf.js
