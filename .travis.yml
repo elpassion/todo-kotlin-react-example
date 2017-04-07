@@ -12,4 +12,4 @@ before_script:
  - npm install webpack
  - npm install karma-webpack
  - ./gradlew karma-start || true
- - node ./node_modules/karma/bin/karma start --single-run --port 9876 --browsers PhantomJS build/karma.conf.js
+ - node ./node_modules/karma/bin/karma start --port 9876 --browsers PhantomJS build/karma.conf.js || true
