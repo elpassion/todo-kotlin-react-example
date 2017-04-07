@@ -3,4 +3,5 @@ language: java
 
 before_script:
  - npm install karma
+ - npm install --save-dev karma-phantomjs-launcher
  - node ./node_modules/karma/bin/karma start --single-run --port 9876 --browsers PhantomJS
