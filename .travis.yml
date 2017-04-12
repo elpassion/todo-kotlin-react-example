@@ -1,2 +1,5 @@
 dist: trusty
 language: java
+
+after_script:
+  - cat build/logs/karma.log
