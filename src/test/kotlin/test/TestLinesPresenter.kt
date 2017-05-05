@@ -17,7 +17,7 @@ class TestLinesPresenter {
         assertEquals(listOf("my line"), view.displayedLines)
 
         // focus is still on the text box
-        assertTrue { view.textBoxFocused }
+        assertTrue { !view.textBoxFocused }
     }
 
     @Test
